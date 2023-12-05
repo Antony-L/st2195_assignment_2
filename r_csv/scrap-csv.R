@@ -13,7 +13,6 @@ csv_data <- page %>%
   html_nodes(xpath = '//*[@id="mw-content-text"]/div[1]/pre[1]/text()') %>%
   html_text()
 
-
 # Convert CSV to data frame
 df <- read.csv(text = csv_data)
 
